@@ -12,7 +12,7 @@
 template<class T>
 class heap {
 
-private:
+protected:
     std::vector<T> values;
 
     /**
@@ -76,7 +76,7 @@ public:
 
     friend std::ostream &operator<<(std::ostream &os, const heap &h) {
         std::for_each(h.values.begin(), h.values.end(), [&os](const T &t) {
-            os << t << "  ";
+            os << t;
         });
         return os;
     }

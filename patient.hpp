@@ -41,6 +41,8 @@ public:
         return !(lhs == rhs);
     }
 
+    friend std::ostream& operator<< (std::ostream & os, const patient& p);
+
 };
 
 
